@@ -1,0 +1,225 @@
+@font-face {
+    font-family: best;
+    src: url(best.otf);
+}
+@font-face {
+    font-family: Squid;
+    src: url(Game\ Of\ Squids.otf);
+}
+@font-face {
+    font-family: azonix;
+    src: url(Azonix.otf);
+}
+body{
+    background-color: #23232e;
+    padding: 0;
+    margin: 0;
+    user-select: none;
+    color: white;
+    font-weight: 100;
+}
+.progress{
+    background-color: aqua;
+    height: 10px;
+    width: 0%;
+    position: fixed;
+    top: 0;
+    z-index: 1005;
+}
+.nav{
+    background-color: rgb(233, 135, 135);
+    position: fixed;
+    top: 0;
+    z-index: 1004;
+    width: 100%;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-left: 23%;
+}
+i{
+    cursor: pointer;
+    filter: brightness(80%);
+    transition: filter 0.6s;
+    margin-left: 100%;
+}
+i:hover{
+    filter: brightness(100%);
+}
+li a{
+    padding: 18px 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+li a:hover{
+    background-color: rgb(236, 35, 35);
+}
+.mainh1{
+    animation: onload 1s;
+    color: white;
+    margin-top: 5%;
+    font-size: 5rem;
+    font-weight: 100;
+    font-family: best;
+}
+.trumpet1{
+    transform: scaleX(-1);
+    left: 0;
+    animation: onload2 1s;
+}
+.land{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+.trumpet{
+    height: 20%;
+    width: 20%;
+}
+.trumpet2{
+    right: 0;
+    animation: onload1 1s;
+}
+.captain{
+    animation: onload3 1s;
+}
+#my-canvas{
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 1s;
+}
+.about{
+    background-color: black;
+}
+.abouth1{
+    letter-spacing: -8px;
+    color: rgb(139, 133, 133);
+    font-size: 10rem;
+    line-height: 0.2;
+    padding-top: 6%;
+}
+l{
+    letter-spacing: 0;
+    color: gold;
+    font-weight: 100;
+    font-size: 5rem;
+    font-family: squid;
+}
+.banner{
+    width: 100%;
+    z-index: 0;
+}
+.textontop{
+    z-index: 1;
+    position: absolute;
+    bottom: 15%;
+    backdrop-filter: blur(2px);
+    font-size: 1.5rem;
+    width: 35%;
+    left: 5%;
+    border: white solid 2px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.521);
+}
+.content{
+    position: relative;
+    text-align: center;
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: linear-gradient(#ff9933, #fff,#006400);
+    border-radius: 8px;
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: rgb(67, 65, 199); 
+    border-radius: 8px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(8, 58, 165); 
+  }
+.awards{
+    padding-top: 2%;
+    background-image: url("army\ back.jpg");
+    display: flex;
+    padding-bottom: 10%;
+}
+.award-banner{
+    margin-top: 10%;
+    background-color: black;
+    font-size: 25px;
+    border: white solid 2px;
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+.award-banner1{
+    border-left: none;
+}
+#award-name{
+    background-color: rgba(1, 5, 252, 0.521);
+    margin-bottom: 4%;
+    font-family: azonix;
+    padding: 1%;
+    width: fit-content;
+    border: solid 2px white;
+}
+.medals img{
+    width: 9%;
+    height: 9%;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.pledge{
+    margin: 10%;
+    padding: 50px;
+    border: white solid 2px;
+    border-right: none;
+    border-bottom: none;
+    border-radius: 25px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 40%;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+.take{
+    padding: 20px;
+    width: 240px;
+    border-radius: 40px;
+    background-image: linear-gradient(90deg, #0162cd, #55e7fc);
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+}
+@keyframes onload{
+    from{margin-top:0;opacity: 0;}
+    to{margin-top: 5%;opacity: 1;}
+}
+@keyframes onload1{
+    from{margin-right:0;opacity: 0;}
+    to{margin-right: 5%;opacity: 1;}
+}
+@keyframes onload2{
+    from{margin-left:0;opacity: 0;}
+    to{margin-left: 5%;opacity: 1;}
+}
+@keyframes onload3{
+    from{margin-top:10%;opacity: 0;}
+    to{margin-top: 0;opacity: 1;}
+}
