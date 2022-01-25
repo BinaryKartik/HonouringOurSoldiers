@@ -31,7 +31,7 @@ window.onscroll = function(){
     ProgressBar()
     awards()
     if(!playing && !manualPause){
-      aud.volume = 1
+      aud.volume = 0.2
       aud.play()
     playing = true
     }
