@@ -17,6 +17,7 @@ body{
     user-select: none;
     color: white;
     font-weight: 100;
+    overflow-x: hidden;
 }
 .progress{
     background-color: aqua;
@@ -98,6 +99,7 @@ li a:hover{
 }
 .about{
     background-color: black;
+    width: 100vw;
 }
 .abouth1{
     letter-spacing: -8px;
@@ -206,6 +208,34 @@ l{
     font-size: 20px;
     cursor: pointer;
     color: white;
+}
+@media only screen and (max-width:1175px) {
+    .textontop{
+        position: unset;
+        width: 95%;
+        text-align: center;
+    }
+}
+@media only screen and (max-width:897px) {
+    l{
+        font-size: 4rem;
+    }
+    .abouth1{
+        font-size: 8rem;
+    }
+    nav ul{
+        margin-left: 0%;
+    }
+}
+@media only screen and (max-width:800px) {
+    .trumpet{
+        visibility: hidden;
+    }
+}
+@media only screen and (max-width:1175px) {
+    li a{
+        padding: 9px 25px;
+    }
 }
 @keyframes onload{
     from{margin-top:0;opacity: 0;}
